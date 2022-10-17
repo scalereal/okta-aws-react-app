@@ -1,0 +1,9 @@
+{
+    "short_name": "Khora",
+    "name": "Khora Healthcare Solutions",
+    "icons": [],
+    "start_url": ".",
+    "background_color": "#FE8D6B",
+    "display": "standalone",
+    "theme_color": "#FE8D6B"
+}

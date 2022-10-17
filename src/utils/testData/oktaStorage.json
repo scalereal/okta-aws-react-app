@@ -1,0 +1,12 @@
+{
+    "idToken": {
+        "claims": {
+            "name": "dummy name",
+            "email": "dummy email"
+        },
+        "idToken": "dummy token value"
+    },
+    "accessToken": {
+        "accessToken": "dummy value"
+    }
+}

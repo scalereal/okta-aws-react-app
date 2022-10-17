@@ -1,0 +1,87 @@
+{
+    "name": "React-okta-aws-app",
+    "description": "React-okta-aws configuration demo",
+    "scripts": {
+        "prepare": "husky install",
+        "pre-commit": "lint-staged",
+        "clean": "rimraf dist coverage",
+        "lint:css": "stylelint 'src/**/*.tsx'",
+        "lint:ts": "eslint 'src/**/*.{ts,tsx}'",
+        "lint": "run-p lint:ts lint:css",
+        "lint:fix": "run-p 'lint:ts --fix' 'lint:css --fix'",
+        "test:update": "run-p test:types 'test:jest -- -u'",
+        "test:watch": "run-p 'test:types -- -w' 'test:jest -- --watch'",
+        "test:jest": "jest",
+        "test:types": "tsc",
+        "test": "run-p test:types test:jest",
+        "watch": "webpack serve --mode development --config webpack.config.js",
+        "dist": "webpack --mode production --progress --config webpack.config.js",
+        "dist:analyze": "npm run dist -- --analyze"
+    },
+    "devDependencies": {
+        "@medly/babel-config-react": "^0.6.0",
+        "@medly/eslint-config-react": "^0.3.1",
+        "@medly/jest-config-react": "^0.4.0",
+        "@medly/prettier-config": "^0.1.1",
+        "@medly/stylelint-config": "^0.2.0",
+        "@medly/typescript-config-react": "^1.4.0",
+        "@medly/webpack-config": "^0.6.0",
+        "@testing-library/dom": "^8.13.0",
+        "@testing-library/react": "12.1.5",
+        "@testing-library/user-event": "^14.2.1",
+        "@types/react": "17.0.40",
+        "@types/react-dom": "17.0.13",
+        "@types/react-router-dom": "^5.3.3",
+        "@types/styled-components": "^5.1.25",
+        "axios-mock-adapter": "^1.21.1",
+        "cross-env": "^7.0.3",
+        "husky": "^8.0.1",
+        "lint-staged": "13.0.3",
+        "npm-check-updates": "^12",
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^3.0.2"
+    },
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.118.0",
+        "@aws-sdk/credential-providers": "^3.118.0",
+        "@aws-sdk/s3-request-presigner": "^3.118.0",
+        "@medly-components/core": "^6.15.2",
+        "@medly-components/layout": "^3.2.19",
+        "@medly-components/loaders": "^1.6.9",
+        "@medly-components/theme": "^5.2.0",
+        "@medly-components/utils": "^2.1.3",
+        "@okta/okta-auth-js": "6.0",
+        "@okta/okta-react": "6.4",
+        "axios": "^0.27.2",
+        "date-fns-tz": "^1.3.5",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-router-dom": "^5.3.0",
+        "styled-components": "^5.3.5",
+        "util": "^0.12.4"
+    },
+    "main": "lib/index.js",
+    "license": "UNLICENSED",
+    "version": "0.0.0",
+    "lint-staged": {
+        "src/**/*.{ts,tsx}": [
+            "eslint 'src/**/*.tsx' --fix",
+            "stylelint 'src/**/*.tsx' --fix"
+        ]
+    },
+    "babel": {
+        "extends": "@medly/babel-config-react"
+    },
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "extends": "@medly/react",
+        "ignorePatterns": [
+            "jest.config.js",
+            "webpack.config.js"
+        ]
+    },
+    "stylelint": {
+        "extends": "@medly/stylelint-config"
+    },
+    "prettier": "@medly/prettier-config"
+}

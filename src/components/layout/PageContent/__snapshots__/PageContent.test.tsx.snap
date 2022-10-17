@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageContent component should render properly 1`] = `
+.c2 {
+  margin: 0;
+  color: #607890;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  text-align: initial;
+  text-transform: uppercase;
+}
+
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 3.2rem;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.04rem;
+  -moz-letter-spacing: -0.04rem;
+  -ms-letter-spacing: -0.04rem;
+  letter-spacing: -0.04rem;
+  line-height: 4.0rem;
+  text-align: initial;
+}
+
+.c5 {
+  color: black;
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: calc(2 * 0.25rem);
+  padding: 0 0;
+  margin: 0 0;
+  box-shadow: none;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0rem;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0rem;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  overflow: auto;
+  border-radius: 0.8rem;
+  background-color: #F7F8F9;
+}
+
+.c4 {
+  font-size: 1rem;
+  line-height: 2rem;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  margin: 0 0.8rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #607890;
+}
+
+.c1 {
+  padding: 4rem;
+  background-color: #ffffff;
+  margin-bottom: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+.c3 {
+  display: inline;
+}
+
+.c9 {
+  padding: 1rem 4rem;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+<div>
+  <main
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h5
+        class="c2 c3"
+        id="Dashboard"
+      >
+        Dashboard
+      </h5>
+      <span
+        class="c4"
+      >
+        /
+      </span>
+      <h5
+        class="c2 c3"
+        id="activeMenu"
+      >
+        activeMenu
+      </h5>
+      <div
+        class="c5 c6"
+        color="black"
+        display="flex"
+        font-variant="body2"
+      >
+        <div
+          class="c5 c7"
+          color="black"
+          display="flex"
+          font-variant="body2"
+        >
+          <h2
+            class="c8"
+            id="page-title"
+          >
+            test
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c9"
+    >
+      Demo PageContent
+    </div>
+  </main>
+</div>
+`;

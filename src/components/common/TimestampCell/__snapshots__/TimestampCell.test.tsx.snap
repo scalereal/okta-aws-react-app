@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimestampCell should render empty string when date is invalid 1`] = `
+.c0 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+<div>
+  <span
+    class="c0"
+  />
+</div>
+`;
+
+exports[`TimestampCell should render previous day of UTC when time has not exceeded time difference 1`] = `
+.c0 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    12/12/2019 08:14:16
+  </span>
+</div>
+`;
+
+exports[`TimestampCell should render same day as UTC when time exceeds time difference 1`] = `
+.c0 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    12/13/2019 04:14:16
+  </span>
+</div>
+`;
+
+exports[`TimestampCell should render same day when timezone is already in NY 1`] = `
+.c0 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    12/13/2019 01:14:16
+  </span>
+</div>
+`;

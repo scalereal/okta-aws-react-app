@@ -1,0 +1,512 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auth should render properly 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  text-align: initial;
+}
+
+.c10 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c13 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  text-align: initial;
+  display: inline-block;
+}
+
+.c8 {
+  color: black;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: calc(2 * 0.25rem);
+  padding: 0 0;
+  margin: 0 0;
+  box-shadow: none;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c11 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11:hover {
+  cursor: pointer;
+}
+
+.c11:focus {
+  outline: none;
+}
+
+.c11:disabled {
+  cursor: not-allowed;
+}
+
+.c11::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.c11:disabled {
+  color: #dfe4e9;
+}
+
+.c11:disabled::after {
+  background-color: #dfe4e9;
+}
+
+.c11:not(:disabled):not(:hover) {
+  color: #ffffff;
+}
+
+.c11:not(:disabled):not(:hover)::after {
+  background-color: #ffffff;
+}
+
+.c11:not(:disabled):active {
+  color: #eff2f4;
+}
+
+.c11:not(:disabled):active::after {
+  background-color: #eff2f4;
+}
+
+.c11:not(:disabled):active::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c11:not(:disabled):not(:active):hover {
+  color: #F7F8F9;
+}
+
+.c11:not(:disabled):not(:active):hover::after {
+  background-color: #F7F8F9;
+}
+
+.c11:not(:disabled):not(:active):hover::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c15 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem;
+  border-radius: 0.4rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15:hover {
+  cursor: pointer;
+}
+
+.c15:focus {
+  outline: none;
+}
+
+.c15:disabled {
+  cursor: not-allowed;
+}
+
+.c15:disabled {
+  color: #b0bcc8;
+  background: #dfe4e9;
+}
+
+.c15:not(:disabled):not(:hover) {
+  color: #13181D;
+  background: #ffffff;
+}
+
+.c15:not(:disabled):active {
+  color: #303C48;
+  background: #eff2f4;
+}
+
+.c15:not(:disabled):not(:active):hover {
+  color: #435465;
+  background: #F7F8F9;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.4rem;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c0 {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('/images/circles.png') left bottom 25% no-repeat,url('/images/loginBgImage-min.png') center/cover no-repeat;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  height: 90%;
+  margin-left: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.6rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0 rgba(0,0,0,0.15);
+  box-sizing: border-box;
+  background-color: #6E14FF;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c6 {
+  display: block;
+  color: #ffffff;
+}
+
+.c7 {
+  border: none;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 0.4rem;
+  padding: 1.3rem 1.6rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #98A7B7;
+}
+
+.c7::-moz-placeholder {
+  color: #98A7B7;
+}
+
+.c7:-ms-input-placeholder {
+  color: #98A7B7;
+}
+
+.c7::placeholder {
+  color: #98A7B7;
+}
+
+.c3 {
+  gap: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c12 {
+  padding: 1.4rem 0;
+}
+
+.c12:not(:disabled:active):hover::after {
+  width: 100%;
+}
+
+.c14 {
+  text-align: center;
+}
+
+@media only screen and (max-width:1279px) {
+  .c1 {
+    padding: 0 7.8rem 2rem;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .c1 {
+    padding: 0 7.8rem 2rem;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c1 {
+    padding: 0 7.8rem 2rem;
+  }
+}
+
+@media only screen and (max-width:1279px) {
+  .c2 {
+    width: 57%;
+    margin: 5% 0;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .c2 {
+    width: 62%;
+    margin: 8% 0;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c2 {
+    width: 65%;
+    margin: 10% 0;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c14 {
+    margin-top: 2rem;
+  }
+
+  .c14 button {
+    padding: 1.4rem 6.4rem;
+  }
+}
+
+<div>
+  <main
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        alt="Khora Healthcare Solutions Logo"
+        class="c2"
+        src="/images/logo.svg"
+      />
+      <form
+        class="c3"
+        novalidate=""
+      >
+        <div
+          class="c4"
+        >
+          <h5
+            class="c5 c6"
+          >
+            EMAIL ADDRESS
+          </h5>
+          <input
+            class="c7"
+            id="email-id"
+            name="email"
+            placeholder="Enter your email"
+            required=""
+            type="email"
+            value=""
+          />
+          
+        </div>
+        <div>
+          <div
+            class="c4"
+          >
+            <h5
+              class="c5 c6"
+            >
+              PASSWORD
+            </h5>
+            <input
+              class="c7"
+              id="password-id"
+              name="password"
+              placeholder="Enter your password"
+              required=""
+              type="password"
+              value=""
+            />
+          </div>
+          <div
+            class="c8 c9"
+            color="black"
+            display="flex"
+            font-variant="body2"
+          >
+            <span
+              class="c10"
+            >
+              Forgot your password?
+            </span>
+            <button
+              class="c11 c12"
+              type="button"
+            >
+              <span
+                class="c13"
+              >
+                Reset password
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="c14"
+        >
+          <button
+            class="c15"
+            disabled=""
+            id="signIn"
+            type="submit"
+          >
+            <span
+              class="c13"
+            >
+              Sign In
+            </span>
+          </button>
+        </div>
+        
+      </form>
+      <span
+        class="c10"
+      >
+        Copyright © 2022 Khora
+      </span>
+    </div>
+  </main>
+</div>
+`;

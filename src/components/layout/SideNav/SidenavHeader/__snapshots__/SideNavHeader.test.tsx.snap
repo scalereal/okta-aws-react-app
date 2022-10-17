@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavHeader should render properly 1`] = `
+.c1 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: transparent;
+}
+
+.c1 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #6E14FF;
+}
+
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  text-align: initial;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.c4 {
+  margin-right: 1.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.c2 {
+  z-index: inherit;
+  border: 0.1px solid #C7D0D8;
+  padding: 0.9rem;
+  background-color: transparent;
+}
+
+.c2 > path {
+  fill: #6E14FF;
+}
+
+.c0 {
+  width: 100%;
+  z-index: 3;
+  min-height: 7.2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  overflow: visible;
+  grid-template-columns: 7.2rem calc(25.6rem - 7.2rem);
+  color: #435465;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5 {
+  border-bottom: 0.1rem solid #dfe4e9;
+  width: calc(100% - 4rem);
+  margin: auto;
+  margin-top: -0.1rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <svg
+      class="c1 c2"
+      fill="none"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M12 5v2h8c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2zM4 19h2v-2H4v2zm2-4H4v-2h2v2zm-2-4h2V9H4v2zm2-4H4V5h2v2zm2 12h2v-2H8v2zm2-4H8v-2h2v2zm-2-4h2V9H8v2zm2-4H8V5h2v2zm2 12h7c.55 0 1-.45 1-1v-8c0-.55-.45-1-1-1h-7v2h2v2h-2v2h2v2h-2v2zm6-8h-2v2h2v-2zm-2 4h2v2h-2v-2z"
+        fill="#000"
+        fill-opacity=".54"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="c3 c4"
+    >
+      OKTA-AWS-React App
+    </span>
+  </div>
+  <div
+    class="c5"
+  />
+</div>
+`;

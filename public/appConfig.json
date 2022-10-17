@@ -1,0 +1,11 @@
+{
+    "ENV": "dev",
+    "APP_CLIENT_ID": "0oa2t5tvn6IWl4S1G1d7",
+    "APP_PRODUCT_CATEGORY": "default",
+    "AUTH_ISSUER": "https://tangorx-preview.oktapreview.com/oauth2/default",
+    "AUTH_URL": "https://tangorx-preview.oktapreview.com",
+    "AWS_REGION": "us-east-1",
+    "AWS_ROLE_ARN": "arn:aws:iam::684262816421:role/khora-service-okta-idp-role",
+    "AWS_S3_BUCKET_NAME": "khora-service-upload-dev",
+    "IDPS": []
+}
