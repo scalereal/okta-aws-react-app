@@ -6,12 +6,11 @@ export interface OktaLocalStorage {
 }
 
 export const getUserInfo = (): OktaLocalStorage => {
-    const oktaStorage: any = JSON.parse(localStorage.getItem('okta-token-storage') || '{}'),
-        idTokenClaims = oktaStorage?.idToken?.claims;
+    const { accessToken, idToken }: any = JSON.parse(localStorage.getItem('okta-token-storage') || '{}');
     return {
-        oktaToken: oktaStorage?.accessToken?.accessToken || '',
-        name: idTokenClaims?.name || '',
-        email: idTokenClaims?.email || '',
-        idToken: oktaStorage?.idToken?.idToken || ''
+        oktaToken: accessToken?.accessToken || '',
+        name: idToken?.claims?.name || '',
+        email: idToken?.claims?.email || '',
+        idToken: idToken?.idToken || ''
     };
 };
