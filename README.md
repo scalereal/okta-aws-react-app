@@ -27,8 +27,8 @@
 ## Local Setup
 
 - Clone the repo
-  - https - `git clone https://github.com/scalereal/okta-aws-app.git`
-  - ssh - `git clone git@github.com:scalereal/okta-aws-app.git`
+  - https - `git clone https://github.com/scalereal/okta-aws-react-app.git`
+  - ssh - `git clone git@github.com:scalereal/okta-aws-react-app.git`
 - Run `yarn` to install dependencies
 - Run `yarn watch` to run locally and connect with dev env
 
