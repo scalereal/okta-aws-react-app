@@ -8,13 +8,14 @@ export const Container = styled('main')`
     height: 100%;
     position: relative;
     ${centerAligned()};
-    background: url('/images/circles.png') left bottom 25% no-repeat, url('/images/loginBgImage-min.png') center/cover no-repeat;
+    background: url('https://softauthor.com/wp-content/uploads/2021/08/CSS-Background-Image-Full-Screent-With-background-Image-1024x903.png')
+        center/cover no-repeat;
 `;
 
 export const FormWrapper = styled('div')`
     display: flex;
     flex-basis: 30%;
-    height: 90%;
+    height: 60%;
     margin-left: 50%;
     align-items: center;
     border-radius: 0.6rem;
