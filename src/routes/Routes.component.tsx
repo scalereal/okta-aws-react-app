@@ -20,10 +20,9 @@ const DataUpload = lazy(() => import(/* webpackChunkName: "DataUpload" */ /* web
 const Auth = lazy(() => import(/* webpackChunkName: "Auth" */ /* webpackPrefetch: true */ '@components/Auth'));
 
 export const Routes: React.FC = React.memo(() => {
-    const restoreOriginalUri = async (_oktaAuth: any, originalUri: any) => {
-        console.log(originalUri, _oktaAuth);
+    const restoreOriginalUri = async (_oktaAuth: any, originalUri: any) =>
         history.replace(toRelativeUrl(originalUri || '/login', window.location.origin));
-    };
+
     return (
         <Router history={history}>
             <ToastContainer id="toast-message" position="top" />

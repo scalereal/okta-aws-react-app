@@ -1,6 +1,7 @@
 import { HeadObjectCommand, ListObjectsV2Command, PutObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { Space } from '@components/common/SharedStyle';
+import { Header } from '@components/layout';
 import { useS3Client } from '@effects/useS3Client';
 import { addToast } from '@medly-components/core';
 import { fetch, getDateFromDate, getUserInfo } from '@utils';
@@ -178,7 +179,8 @@ export const DataUpload: FC = memo(() => {
 
     return (
         <>
-            <StyledPageContent withoutPadding pageTitle={<PageTitle showHelperText />}>
+            <Header />
+            <StyledPageContent pageTitle={<PageTitle showHelperText />}>
                 <Form uploadHandler={handleFileUpload} isLoading={isLoading} />
                 <Space val="3rem" />
                 <FileUploadHistoryTable isLoading={isFileListLoading} fileList={fileList} />

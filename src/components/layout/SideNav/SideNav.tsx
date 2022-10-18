@@ -3,7 +3,6 @@ import { UploadIcon } from '@icons';
 import { InsertChartOutlinedIcon } from '@medly-components/icons';
 import { SideNav as MedlySideNav } from '@medly-components/layout';
 import { WithStyle } from '@medly-components/utils';
-import { useOktaAuth } from '@okta/okta-react';
 import { FC, memo, useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { isSidebarVisible } from './config';
@@ -27,11 +26,10 @@ const Component: FC<Props> = memo(props => {
         sideBarVisible = isSidebarVisible(pathname),
         { defaultOpen } = props,
         history = useHistory(),
-        { authState } = useOktaAuth(),
         handlePathChange = useCallback((page: string) => history.push(page), [history]);
     if (!sideBarVisible) return null;
 
-    return authState?.isAuthenticated ? (
+    return (
         <MedlySideNav
             onChange={handlePathChange}
             active={pathname}
@@ -44,8 +42,6 @@ const Component: FC<Props> = memo(props => {
                 <MedlySideNav.Group title="Menu">{getMedlySideBarNav(menuList)}</MedlySideNav.Group>
             </MedlySideNav.List>
         </MedlySideNav>
-    ) : (
-        <></>
     );
 });
 

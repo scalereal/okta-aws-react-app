@@ -1,15 +1,15 @@
-import { WithStyle } from '@medly-components/utils';
-import React from 'react';
-import * as Styled from './Header.styled';
-import { StaticProps } from './types';
+import UserProfile from '@components/common/UserProfile';
+import { FC } from 'react';
+import { StyledHeader } from './Header.styled';
 
-export const Header: React.FC & WithStyle & StaticProps = props => {
-    return <Styled.Header {...props} />;
+export const Header: FC = () => {
+    return (
+        <StyledHeader>
+            <UserProfile />
+        </StyledHeader>
+    );
 };
 
 Header.displayName = 'Header';
-Header.Style = Styled.Header;
-Header.LeftSide = Styled.LeftSide;
-Header.RightSide = Styled.RightSide;
 
 export default Header;
