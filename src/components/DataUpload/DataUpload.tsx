@@ -1,7 +1,7 @@
 import { HeadObjectCommand, ListObjectsV2Command, PutObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
+import { Header } from '@components';
 import { Space } from '@components/common/SharedStyle';
-import { Header } from '@components/layout';
 import { useS3Client } from '@effects/useS3Client';
 import { addToast } from '@medly-components/core';
 import { fetch, getDateFromDate, getUserInfo } from '@utils';
@@ -12,14 +12,16 @@ import Form from './Form';
 import PageTitle from './PageTitle';
 import { FileListType } from './types';
 
-const AWS_S3_BUCKET_NAME = process.env.AWS_S3_BUCKET_NAME as string;
+const AWS_S3_BUCKET_NAME = process.env.AWS_S3_BUCKET_NAME as string,
+    AWS_REGION = process.env.AWS_REGION as string,
+    AWS_ROLE_ARN = process.env.AWS_ROLE_ARN as string;
 
 export const DataUpload: FC = memo(() => {
     const [isLoading, setIsLoading] = useState<boolean>(false),
         { name, email } = getUserInfo(),
         [fileList, setFileList] = useState<FileListType>([]),
         [isFileListLoading, setIsFileListLoading] = useState(true),
-        s3Client = useS3Client(process.env.AWS_REGION || '', process.env.AWS_ROLE_ARN || ''),
+        s3Client = useS3Client(AWS_REGION, AWS_ROLE_ARN),
         getFileList = useCallback(async () => {
             setIsFileListLoading(true);
             const listObjects = new ListObjectsV2Command({
@@ -98,7 +100,7 @@ export const DataUpload: FC = memo(() => {
                 },
                 fileName = file.name.replace(/[^\w.]+/g, '_'),
                 uploadParams = {
-                    Bucket: 'sample-okta',
+                    Bucket: AWS_S3_BUCKET_NAME,
                     Key: `${new Date().getTime()}_${fileName}`,
                     Body: file,
                     Metadata
@@ -121,7 +123,7 @@ export const DataUpload: FC = memo(() => {
                         // failure message
                         addToast({
                             variant: 'error',
-                            message: 'Upload failed: Try uploading the file again'
+                            message: 'Error while uploading the file'
                         });
                     });
         },
@@ -139,7 +141,7 @@ export const DataUpload: FC = memo(() => {
                 },
                 fileName = file.name.replace(/[^\w.]+/g, '_'),
                 uploadParams = {
-                    Bucket: 'sample-okta',
+                    Bucket: AWS_S3_BUCKET_NAME,
                     Key: `${new Date().getTime()}_${fileName}`,
                     Body: file,
                     Metadata
